@@ -4,6 +4,8 @@ import com.djk.service.AccountService;
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
 
+import java.util.Date;
+
 
 /**
  * 模拟表现层，用于调业务层
@@ -17,8 +19,13 @@ public class Client {
         ApplicationContext applicationContext = new ClassPathXmlApplicationContext("classpath:applicationContext.xml");
 
         //2.根据id获取bean对象
-        AccountService accountService = (AccountService) applicationContext.getBean("accountService");
+        //AccountService accountService = (AccountService) applicationContext.getBean("accountService");
+        //accountService.saveAccount();
 
+        //AccountService accountService = (AccountService) applicationContext.getBean("accountService2");
+        //accountService.saveAccount();
+
+        AccountService accountService = (AccountService) applicationContext.getBean("accountService3");
         accountService.saveAccount();
 
     }
