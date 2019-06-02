@@ -25,7 +25,7 @@ public class Client {
         //AccountService accountService = (AccountService) applicationContext.getBean("accountService2");
         //accountService.saveAccount();
 
-        AccountService accountService = (AccountService) applicationContext.getBean("accountService3");
+        AccountService accountService = (AccountService) applicationContext.getBean("accountService");
         accountService.saveAccount();
 
     }

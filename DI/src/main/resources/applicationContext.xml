@@ -42,7 +42,7 @@
             改变了bean对象的实例化方式，使我们在创建对象时，如果用不到这些数据，也必须提供。
     -->
     <bean id="accountService" class="com.djk.service.impl.AccountServiceImpl">
-        <constructor-arg name="name" value="泰斯特"></constructor-arg>
+        <constructor-arg name="username" value="泰斯特"></constructor-arg>
         <constructor-arg name="age" value="18"></constructor-arg>
         <constructor-arg name="birthday" ref="now"></constructor-arg>
     </bean>
@@ -65,7 +65,7 @@
             如果有某个成员必须有值，则获取对象是有可能set方法没有执行。
     -->
     <bean id="accountService2" class="com.djk.service.impl.AccountServiceImpl2">
-        <property name="name" value="TEST" ></property>
+        <property name="username" value="TEST" ></property>
         <property name="age" value="21"></property>
         <property name="birthday" ref="now"></property>
     </bean>
