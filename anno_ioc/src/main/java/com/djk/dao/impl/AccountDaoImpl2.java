@@ -4,10 +4,10 @@ import com.djk.dao.AccountDao;
 import org.springframework.stereotype.Repository;
 
 
-@Repository(value = "accountDao1")
-public class AccountDaoImpl implements AccountDao {
+@Repository(value = "accountDao2")
+public class AccountDaoImpl2 implements AccountDao {
 
     public void saveAccount() {
-        System.out.println("save account111111111");
+        System.out.println("save account22222222222222");
     }
 }
