@@ -16,6 +16,8 @@
         <module>anno_ioc</module>
         <module>account_xmlioc</module>
         <module>account_annoioc</module>
+        <module>account_annoioc_withoutxml</module>
+        <module>account</module>
     </modules>
     <packaging>pom</packaging>
 
