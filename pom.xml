@@ -19,6 +19,9 @@
         <module>account_annoioc_withoutxml</module>
         <module>account</module>
         <module>proxy</module>
+        <module>springAOP</module>
+        <module>adviceType</module>
+        <module>annotationAOP</module>
     </modules>
     <packaging>pom</packaging>
 

@@ -46,6 +46,7 @@ public class AccountServiceImpl implements AccountService {
     }
 
     public void transfer(String sourceName, String targetName, Float money) {
+        System.out.println("transfer....");
         //2.1根据名称查询转出账户
         Account source = accountDao.findAccountByName(sourceName);
         //2.2根据名称查询转入账户
