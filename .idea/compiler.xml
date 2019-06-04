@@ -7,6 +7,7 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="factory" />
+        <module name="proxy" />
         <module name="account_xmlioc" />
         <module name="anno_ioc" />
         <module name="spring" />

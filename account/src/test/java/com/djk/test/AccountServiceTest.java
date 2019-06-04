@@ -20,4 +20,17 @@ public class AccountServiceTest {
     @Autowired
     private AccountService accountService;
 
+    @Test
+    public void testFindAll() {
+        //3.执行方法
+        List<Account> accounts = accountService.findAllAccount();
+        for(Account account : accounts) {
+            System.out.println(account);
+        }
+    }
+
+    @Test
+    public void testTransfer() {
+        accountService.transfer("aaa","bbb",100f);
+    }
 }

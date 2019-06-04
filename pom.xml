@@ -18,6 +18,7 @@
         <module>account_annoioc</module>
         <module>account_annoioc_withoutxml</module>
         <module>account</module>
+        <module>proxy</module>
     </modules>
     <packaging>pom</packaging>
 
