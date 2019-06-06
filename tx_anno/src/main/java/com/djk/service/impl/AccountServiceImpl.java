@@ -3,25 +3,30 @@ package com.djk.service.impl;
 import com.djk.dao.IAccountDao;
 import com.djk.domain.Account;
 import com.djk.service.IAccountService;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
+import org.springframework.transaction.annotation.Propagation;
+import org.springframework.transaction.annotation.Transactional;
 
 /**
  * 账户的业务层实现类
  *
  * 事务控制应该都是在业务层
  */
+@Service("accountService")
+@Transactional(propagation= Propagation.SUPPORTS,readOnly=true)//只读型事务的配置
 public class AccountServiceImpl implements IAccountService{
 
+    @Autowired
     private IAccountDao accountDao;
-
-    public void setAccountDao(IAccountDao accountDao) {
-        this.accountDao = accountDao;
-    }
 
     public Account findAccountById(Integer accountId) {
         return accountDao.findAccountById(accountId);
 
     }
 
+    //需要的是读写型事务配置
+    @Transactional(propagation= Propagation.REQUIRED,readOnly=false)
     public void transfer(String sourceName, String targetName, Float money) {
         System.out.println("transfer....");
             //2.1根据名称查询转出账户

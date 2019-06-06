@@ -27,6 +27,10 @@
         <module>account_aoptx_anno</module>
         <module>Transaction</module>
         <module>tx_xml</module>
+        <module>tx_anno</module>
+        <module>tx_anno_withoutxml</module>
+        <module>account_tx</module>
+        <module>jdk8</module>
     </modules>
     <packaging>pom</packaging>
 

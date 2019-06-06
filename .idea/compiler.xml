@@ -6,14 +6,15 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="adviceType" />
         <module name="DI" />
         <module name="jdbctemplate" />
         <module name="account_aoptx_anno" />
-        <module name="account_annoioc_withoutxml" />
+        <module name="tx_anno_withoutxml" />
         <module name="account" />
         <module name="anno_ioc" />
         <module name="springAOP" />
+        <module name="account_annoioc" />
+        <module name="jdk8" />
         <module name="annotationAOP" />
         <module name="bean" />
         <module name="spring" />
@@ -21,11 +22,16 @@
         <module name="jdbc" />
         <module name="tx_xml" />
         <module name="factory" />
-        <module name="account_annoioc" />
+        <module name="adviceType" />
+        <module name="account_xmlioc" />
+        <module name="tx_anno" />
         <module name="account_aoptx_xml" />
         <module name="transaction" />
-        <module name="account_xmlioc" />
+        <module name="account_annoioc_withoutxml" />
       </profile>
     </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="source" target="1.5" />
+    </bytecodeTargetLevel>
   </component>
 </project>
